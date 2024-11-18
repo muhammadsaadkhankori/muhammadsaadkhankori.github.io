@@ -3,16 +3,41 @@ const { useState } = React;
 
 function Navbar() {
   return (
-    <nav style={{ backgroundColor: '#333', padding: '1rem' }}>
-      <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'space-around', margin: 0, padding: 0 }}>
-        <li><a href="#home" style={{ color: 'white', textDecoration: 'none' }}>Home</a></li>
-        <li><a href="#about" style={{ color: 'white', textDecoration: 'none' }}>About</a></li>
-        <li><a href="#projects" style={{ color: 'white', textDecoration: 'none' }}>Projects</a></li>
-        <li><a href="#contact" style={{ color: 'white', textDecoration: 'none' }}>Contact</a></li>
-      </ul>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">My Portfolio</a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#about">About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#projects">Projects</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 }
+
 
 function Hero() {
   return (
