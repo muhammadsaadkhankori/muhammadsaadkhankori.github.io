@@ -3,62 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saad's Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
         }
+
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
         nav {
-            background-color: #f8f9fa;
-            padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            margin-bottom: 50px;
         }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #007BFF;
+
+        .logo {
+            font-size: 24px;
             font-weight: bold;
+            text-decoration: none;
+            color: #333;
         }
-        nav a:hover {
-            text-decoration: underline;
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
         }
-        .container {
-            text-align: center;
-            padding: 50px 20px;
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
         }
-        img {
-            max-width: 200px;
-            border-radius: 50%;
-            margin: 20px 0;
+
+        .social-links {
+            display: flex;
+            gap: 15px;
         }
-        h1 {
-            font-size: 2.5rem;
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
         }
-        p {
-            font-size: 1.2rem;
-            color: #555;
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .subscribe-form {
+            margin-top: 20px;
+        }
+
+        .subscribe-form input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+            width: 250px;
+        }
+
+        .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .view-all {
+            text-decoration: none;
+            color: #1a73e8;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
     <nav>
-        <div>
+        <a href="#" class="logo">Your Name</a>
+        <div class="nav-links">
             <a href="#about">About</a>
             <a href="#publications">Publications</a>
             <a href="#projects">Projects</a>
+            <a href="#courses">Courses</a>
+            <a href="#research">Research</a>
             <a href="#contact">Contact</a>
-            <a href="cv.pdf" download>CV</a>
+        </div>
+        <div class="social-links">
+            <a href="#twitter">🐦</a>
+            <a href="#linkedin">💼</a>
+            <a href="#github">📚</a>
         </div>
     </nav>
-    <div class="container">
-        <img src="image.png" alt="Your Photo">
-        <h1>Saad's Portfolio</h1>
-        <p>Welcome to my personal portfolio website! Explore my work, publications, and projects, or download my CV.</p>
-    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome! I'm Your Name</h1>
+            <p>Add your brief introduction here. Describe your expertise, current role, and major achievements. This is your chance to make a strong first impression.</p>
+            
+            <p>You can list your key affiliations and roles here:</p>
+            <ul>
+                <li>Current Position at Institution</li>
+                <li>Notable Achievement or Role</li>
+                <li>Another Significant Affiliation</li>
+            </ul>
+
+            <div class="subscribe-form">
+                <h3>Stay Updated</h3>
+                <form>
+                    <input type="email" placeholder="Your email..." required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <img src="/api/placeholder/600/400" alt="Profile Image" class="hero-image">
+    </section>
+
+    <section id="publications">
+        <div class="section-header">
+            <h2>Publications</h2>
+            <a href="#" class="view-all">View all →</a>
+        </div>
+        <!-- Add your publications list here -->
+    </section>
 </body>
 </html>
