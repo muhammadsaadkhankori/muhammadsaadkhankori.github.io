@@ -57,6 +57,7 @@
             background-color: #f8f9fa;
             padding: 40px;
             border-radius: 12px;
+            align-items: center;
         }
 
         .hero-content {
@@ -67,30 +68,10 @@
 
         .hero-image {
             width: 100%;
-            height: 400px;
-            object-fit: cover;
+            height: 100%;
+            object-fit: contain;
             border-radius: 8px;
-        }
-
-        .subscribe-form {
-            margin-top: 20px;
-        }
-
-        .subscribe-form input {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-right: 10px;
-            width: 250px;
-        }
-
-        .subscribe-form button {
-            padding: 10px 20px;
-            background-color: #1a73e8;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            max-height: 500px;
         }
 
         .section-header {
@@ -128,6 +109,8 @@
         </div>
         <div class="social-links">
             <a href="#linkedin">💼</a>
+            <a href="#Google scholar"> </a>
+            <a href="#Github"> </a>
         </div>
     </nav>
 
@@ -135,23 +118,8 @@
         <div class="hero-content">
             <h1>About</h1>
             <p>Add your brief introduction here. Describe your expertise, current role, and major achievements. This is your chance to make a strong first impression.</p>
-            
-            <p>You can list your key affiliations and roles here:</p>
-            <ul>
-                <li>Current Position at Institution</li>
-                <li>Notable Achievement or Role</li>
-                <li>Another Significant Affiliation</li>
-            </ul>
-
-            <div class="subscribe-form">
-                <h3>Stay Updated</h3>
-                <form>
-                    <input type="email" placeholder="Your email..." required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
         </div>
-        <img src="mustaqeem.jfif"  class="hero-image">
+        <img src="mustaqeem.jfif" alt="Mustaqeem Khan" class="hero-image">
     </section>
 
     <section id="publications">
@@ -159,7 +127,6 @@
             <h2>Publications</h2>
             <a href="#" class="view-all">View all →</a>
         </div>
-        <!-- Add your publications list here -->
     </section>
 </body>
 </html>
