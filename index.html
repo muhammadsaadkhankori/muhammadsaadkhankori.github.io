@@ -77,7 +77,7 @@
             background-color: #f8f9fa;
             padding: 40px;
             border-radius: 12px;
-            align-items: center;
+            align-items: start;
         }
 
         .hero-content {
@@ -88,77 +88,19 @@
 
         .hero-image {
             width: 100%;
-            height: 100%;
-            object-fit: contain;
+            height: auto;
+            object-fit: cover;
             border-radius: 8px;
-            max-height: 500px;
         }
 
         .section {
             margin-bottom: 60px;
+            padding: 0 40px;
         }
 
-        .section h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .publication, .project {
-            margin-bottom: 20px;
-        }
-
-        .publication-title, .project-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #1a73e8;
-        }
-
-        .publication-description, .project-description {
-            font-size: 16px;
-            color: #555;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <a href="#" class="logo">Mustaqeem Khan</a>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#publications">Publications</a>
-            <a href="#projects">Projects</a>
-            <a href="#cv">CV</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="social-links">
-            <a href="#linkedin" title="LinkedIn">💼</a>
-            <a href="#google-scholar" title="Google Scholar">📘</a>
-            <a href="#github" title="GitHub">🐙</a>
-        </div>
-    </nav>
-
-    <section class="hero" id="about">
-        <div class="hero-content">
-            <h1>About</h1>
-            <p><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mustaqeem Khan</title>
-    <style>
         .publications-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             margin-top: 30px;
         }
@@ -176,13 +118,6 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
-        .publication-card img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-bottom: 1px solid #eee;
-        }
-
         .publication-content {
             padding: 20px;
         }
@@ -198,26 +133,6 @@
         .publication-description {
             font-size: 14px;
             color: #666;
-            margin-bottom: 16px;
-        }
-
-        .view-all-publications {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 30px;
-        }
-
-        .view-all-btn {
-            display: inline-flex;
-            align-items: center;
-            text-decoration: none;
-            color: #1a73e8;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        .view-all-btn:hover {
-            color: #1557b0;
         }
 
         .section-header {
@@ -225,6 +140,28 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 30px;
+        }
+
+        .view-all-btn {
+            text-decoration: none;
+            color: #1a73e8;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+
+            .publications-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -239,9 +176,9 @@
             <a href="#contact">Contact</a>
         </div>
         <div class="social-links">
-            <a href="#linkedin" title="LinkedIn">💼</a>
-            <a href="#google-scholar" title="Google Scholar">📘</a>
-            <a href="#github" title="GitHub">🐙</a>
+            <a href="#" title="LinkedIn">💼</a>
+            <a href="#" title="Twitter">🔷</a>
+            <a href="#" title="GitHub">🎯</a>
         </div>
     </nav>
 
@@ -249,66 +186,43 @@
         <div class="hero-content">
             <h1>About</h1>
             <p>My research interests revolve around audio, video, and Speech Signal Processing; my Ph.D. thesis was on
-              human emotion recognition using Deep Learning techniques. I have achieved an expert level of conceptual and
-              implementation skills in Deep Learning for various applications. During my Ph.D. research, I designed different
-              kinds of Machine/Deep Learning models, including 1D-CNNs, 2D-CNNs, 3D-CNNs, Multi-Model, audio/text
-              encoders, sequential and its variants for emotion recognition, age and gender detection, action recognition,
-              violence detection, and forecasting. My academic research has been reviewed and published in several reputed
-              peer-reviewed international journals and A* conferences like IEEE, ISE, Elsevier, Welly, IEEE/CVF, and
-              Springer.</p>
+            human emotion recognition using Deep Learning techniques. I have achieved an expert level of conceptual and
+            implementation skills in Deep Learning for various applications. During my Ph.D. research, I designed different
+            kinds of Machine/Deep Learning models, including 1D-CNNs, 2D-CNNs, 3D-CNNs, Multi-Model, audio/text
+            encoders, sequential and its variants for emotion recognition, age and gender detection, action recognition,
+            violence detection, and forecasting. My academic research has been reviewed and published in several reputed
+            peer-reviewed international journals and A* conferences like IEEE, ISE, Elsevier, Welly, IEEE/CVF, and
+            Springer.</p>
         </div>
         <img src="mustaqeem.jfif" alt="Mustaqeem Khan" class="hero-image">
     </section>
 
     <section class="section" id="publications">
-      <div class="section-header">
-          <h2>Publications</h2>
-          <a href="https://scholar.google.com/YOUR_PROFILE" class="view-all-btn">View all →</a>
-      </div>
-      <div class="publications-grid">
-          <!-- Publication 1 -->
-          <div class="publication-card">
-              <img src="/api/placeholder/400/200" alt="Publication thumbnail">
-              <div class="publication-content">
-                  <h3 class="publication-title">Deepskinformer: Skin Lesion Segmentation Using Hierarchical Transformers And Edge Enhancement</h3>
-                  <p class="publication-description">IEEE International Conference on Image Processing (ICIP), 2024</p>
-              </div>
-          </div>
-
-          <!-- Publication 2 -->
-          <div class="publication-card">
-              <img src="/api/placeholder/400/200" alt="Publication thumbnail">
-              <div class="publication-content">
-                  <h3 class="publication-title">Drone-HAT: Hybrid Attention Transformer for Complex Action Recognition</h3>
-                  <p class="publication-description">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</p>
-              </div>
-          </div>
-
-          <!-- Publication 3 -->
-          <div class="publication-card">
-              <img src="/api/placeholder/400/200" alt="Publication thumbnail">
-              <div class="publication-content">
-                  <h3 class="publication-title">AAD-Net: Advanced End-to-End Signal Processing System for Human Emotion Detection</h3>
-                  <p class="publication-description">Knowledge-Based System, 2023</p>
-              </div>
-          </div>
-      </div>
-  </section>
-  
-
-    <section class="section" id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <p class="project-title">1. Emotion Recognition System</p>
-            <p class="project-description">A system that recognizes human emotions in real-time using advanced deep learning techniques.</p>
+        <div class="section-header">
+            <h2>Publications</h2>
+            <a href="https://scholar.google.com/citations?user=YOUR_ID" class="view-all-btn">View all →</a>
         </div>
-        <div class="project">
-            <p class="project-title">2. Violence Detection in Videos</p>
-            <p class="project-description">An AI-powered project that identifies violent actions in videos using sequential and 3D-CNN models.</p>
-        </div>
-        <div class="project">
-            <p class="project-title">3. Multi-modal Sentiment Analysis</p>
-            <p class="project-description">An application combining audio and text analysis for identifying sentiment using multi-modal techniques.</p>
+        <div class="publications-grid">
+            <div class="publication-card">
+                <div class="publication-content">
+                    <h3 class="publication-title">Deepskinformer: Skin Lesion Segmentation Using Hierarchical Transformers And Edge Enhancement</h3>
+                    <p class="publication-description">IEEE International Conference on Image Processing (ICIP), 2024</p>
+                </div>
+            </div>
+
+            <div class="publication-card">
+                <div class="publication-content">
+                    <h3 class="publication-title">Drone-HAT: Hybrid Attention Transformer for Complex Action Recognition</h3>
+                    <p class="publication-description">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</p>
+                </div>
+            </div>
+
+            <div class="publication-card">
+                <div class="publication-content">
+                    <h3 class="publication-title">AAD-Net: Advanced End-to-End Signal Processing System for Human Emotion Detection</h3>
+                    <p class="publication-description">Knowledge-Based System, 2023</p>
+                </div>
+            </div>
         </div>
     </section>
 </body>
