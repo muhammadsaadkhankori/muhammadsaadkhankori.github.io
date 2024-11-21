@@ -153,7 +153,7 @@
     .publication-title {
         font-size: 16px;
         font-weight: 600;
-        color: #333;
+        color: rebeccapurple;
         margin-bottom: 8px;
         line-height: 1.4;
     }
@@ -171,56 +171,52 @@
     }
 
     .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-        margin-top: 30px;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+}
 
-    .project-card {
-        background: #fff;
-        border: 1px solid #eee;
-        border-radius: 8px;
-        overflow: hidden;
-        transition: transform 0.2s, box-shadow 0.2s;
-    }
+.project-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 24px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
-    .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
-    .project-image {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-bottom: 1px solid #eee;
-    }
+.project-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: rebeccapurple;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
 
-    .project-content {
-        padding: 20px;
-    }
+.project-description {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
 
-    .project-title {
-        font-size: 16px;
-        font-weight: 600;
-        color: #333;
-        margin-bottom: 8px;
-        line-height: 1.4;
-    }
+.project-tech {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
+}
 
-    .project-description {
-        font-size: 14px;
-        color: #666;
-        margin-top: 8px;
-        line-height: 1.6;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
-
+}
     .section-header {
         display: flex;
         justify-content: space-between;
@@ -396,27 +392,21 @@
     </div>
     <div class="projects-grid">
         <div class="project-card">
-            <img src="emotion.jpg" alt="Emotion Recognition" class="project-image">
-            <div class="project-content">
-                <h3 class="project-title">Emotion Recognition System</h3>
-                <p class="project-description">A system that recognizes human emotions in real-time using advanced deep learning techniques.</p>
-            </div>
+            <h3 class="project-title">Real-Time UAV Object Detection and Activity Recognition</h3>
+            <p class="project-description">A project focused on developing advanced AI models for real-time UAV applications, enabling intelligent object detection, dynamic scene understanding, and activity recognition.</p>
+            <div class="project-tech">Technologies: Computer Vision, UAV Systems, AI Models</div>
         </div>
 
         <div class="project-card">
-            <img src="violence.jpg" alt="Violence Detection" class="project-image">
-            <div class="project-content">
-                <h3 class="project-title">Violence Detection in Videos</h3>
-                <p class="project-description">An AI-powered project that identifies violent actions in videos using sequential and 3D-CNN models.</p>
-            </div>
+            <h3 class="project-title">Energy Analytics and Time-Series Forecasting with Deep Learning</h3>
+            <p class="project-description">An initiative leveraging deep learning to analyze energy consumption patterns and perform accurate time-series predictions, contributing to sustainable energy solutions.</p>
+            <div class="project-tech">Technologies: Deep Learning, Time-Series Analysis, Energy Forecasting</div>
         </div>
 
         <div class="project-card">
-            <img src="sentiment.jpg" alt="Sentiment Analysis" class="project-image">
-            <div class="project-content">
-                <h3 class="project-title">Multi-modal Sentiment Analysis</h3>
-                <p class="project-description">An application combining audio and text analysis for identifying sentiment using multi-modal techniques.</p>
-            </div>
+            <h3 class="project-title">Command AI Data Establishment</h3>
+            <p class="project-description">A National Research Foundation of Korea (NRFK) project aimed at building robust AI-driven systems for data command and management.</p>
+            <div class="project-tech">Technologies: Data Processing, Machine Learning, AI Systems</div>
         </div>
     </div>
 </section>
