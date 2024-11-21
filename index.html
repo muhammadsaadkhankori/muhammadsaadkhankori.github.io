@@ -149,8 +149,245 @@
     <section class="hero" id="about">
         <div class="hero-content">
             <h1>About</h1>
+            <p><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustaqeem Khan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            margin-bottom: 50px;
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-links a:hover {
+            color: #1a73e8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #1a73e8;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+            align-items: center;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+            max-height: 500px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .publication, .project {
+            margin-bottom: 20px;
+        }
+
+        .publication-title, .project-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a73e8;
+        }
+
+        .publication-description, .project-description {
+            font-size: 16px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">Mustaqeem Khan</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-links">
+            <a href="#linkedin" title="LinkedIn">💼</a>
+            <a href="#google-scholar" title="Google Scholar">📘</a>
+            <a href="#github" title="GitHub">🐙</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <h1>About</h1>
             <p>My research interests revolve around audio, video, and Speech Signal Processing; my Ph.D. thesis was on
-              human emotion recognition using Deep Learning techniques...</p>
+              human emotion recognition using Deep Learning techniques. I have achieved an expert level of conceptual and
+              implementation skills in Deep Learning for various applications. During my Ph.D. research, I designed different
+              kinds of Machine/Deep Learning models, including 1D-CNNs, 2D-CNNs, 3D-CNNs, Multi-Model, audio/text
+              encoders, sequential and its variants for emotion recognition, age and gender detection, action recognition,
+              violence detection, and forecasting. My academic research has been reviewed and published in several reputed
+              peer-reviewed international journals and A* conferences like IEEE, ISE, Elsevier, Welly, IEEE/CVF, and
+              Springer.</p>
+        </div>
+        <img src="mustaqeem.jfif" alt="Mustaqeem Khan" class="hero-image">
+    </section>
+
+    <section class="section" id="publications">
+      <h2>Publications</h2>
+      <h3>2024</h3>
+      <div class="publication">
+          <p class="publication-title">1. Deepskinformer: Skin Lesion Segmentation Using Hierarchical Transformers And Edge Enhancement</p>
+          <p class="publication-description">Presented at IEEE International Conference on Image Processing (ICIP).</p>
+      </div>
+      <div class="publication">
+          <p class="publication-title">2. Drone-HAT: Hybrid Attention Transformer for Complex Action Recognition in Drone Surveillance Videos</p>
+          <p class="publication-description">Published in IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).</p>
+      </div>
+      <div class="publication">
+          <p class="publication-title">3. Graph-Based Knowledge Driven Approach for Violence Detection</p>
+          <p class="publication-description">Published in IEEE Consumer Electronics Magazine.</p>
+      </div>
+      <div class="publication">
+          <p class="publication-title">4. FETR: A Weakly Self-Supervised Approach for Fetal Ultrasound Anatomical Detection</p>
+          <p class="publication-description">Presented at IEEE International Symposium on Medical Measurements and Applications (MeMeA).</p>
+      </div>
+      <div class="publication">
+          <p class="publication-title">5. CamoFocus: Enhancing Camouflage Object Detection With Split-Feature Focal Modulation and Context Refinement</p>
+          <p class="publication-description">Published in IEEE/CVF Winter Conference on Applications of Computer Vision.</p>
+      </div>
+  
+      <h3>2023</h3>
+      <div class="publication">
+          <p class="publication-title">1. AAD-Net: Advanced End-to-End Signal Processing System for Human Emotion Detection & Recognition</p>
+          <p class="publication-description">Published in Knowledge-Based System.</p>
+      </div>
+      <div class="publication">
+          <p class="publication-title">2. Advanced Sequence Learning Approaches for Emotion Recognition Using Speech Signals</p>
+          <p class="publication-description">Published in Intelligent Multimedia Signal Processing for Smart Ecosystems.</p>
+      </div>
+      <div class="publication">
+          <p class="publication-title">3. Machine Learning-Based Approaches for Post-Traumatic Stress Disorder Diagnosis Using Video and EEG Sensors</p>
+          <p class="publication-description">Published in IEEE Sensors Journal.</p>
+      </div>
+      <div class="publication">
+          <p class="publication-title">4. Artrivit: Automatic Face Recognition System Using ViT-Based Siamese Neural Networks with a Triplet Loss</p>
+          <p class="publication-description">Presented at IEEE International Symposium on Industrial Electronics (ISIE).</p>
+      </div>
+      <div class="publication">
+          <p class="publication-title">5. Metaverse Key Technologies and Blockchains: Impacts Considerations</p>
+          <p class="publication-description">Presented at IEEE International Conference on Metaverse Computing, Networking, and Applications.</p>
+      </div>
+  
+      <h3>2022</h3>
+      <div class="publication">
+          <p class="publication-title">1. Automated Wheat Disease Classification Framework Using Advanced Machine Learning Techniques</p>
+          <p class="publication-description">Published in Agriculture.</p>
+      </div>
+      <div class="publication">
+          <p class="publication-title">2. Advanced Fusion-Based Speech Emotion Recognition System Using a Dual-Attention Mechanism</p>
+          <p class="publication-description">Published in Electronics.</p>
+      </div>
+  </section>
+  
+
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <p class="project-title">1. Emotion Recognition System</p>
+            <p class="project-description">A system that recognizes human emotions in real-time using advanced deep learning techniques.</p>
+        </div>
+        <div class="project">
+            <p class="project-title">2. Violence Detection in Videos</p>
+            <p class="project-description">An AI-powered project that identifies violent actions in videos using sequential and 3D-CNN models.</p>
+        </div>
+        <div class="project">
+            <p class="project-title">3. Multi-modal Sentiment Analysis</p>
+            <p class="project-description">An application combining audio and text analysis for identifying sentiment using multi-modal techniques.</p>
+        </div>
+    </section>
+</body>
+</html>
+</p>
         </div>
         <img src="mustaqeem.jfif" alt="Mustaqeem Khan" class="hero-image">
     </section>
