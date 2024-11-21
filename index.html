@@ -54,44 +54,63 @@
         }
 
         .social-links {
-            display: flex;
-            gap: 15px;
-        }
+    display: flex;
+    gap: 15px;
+}
 
-        .social-links a {
-            text-decoration: none;
-            font-size: 20px;
-            color: #333;
-            transition: color 0.3s;
-        }
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .social-links a:hover {
-            color: #1a73e8;
-        }
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.social-links a:hover {
+    color: #1a73e8;
+}
 
         .hero {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 60px;
-            background-color: #f8f9fa;
-            padding: 40px;
-            border-radius: 12px;
-            align-items: start;
-        }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 12px;
+    align-items: start;
+}
 
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-        .hero-image {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-        }
+.hero-content p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #444;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 400px; /* Adjusted max-width */
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 
         .section {
             margin-bottom: 60px;
@@ -99,56 +118,125 @@
         }
 
         .publications-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            margin-top: 30px;
-        }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-top: 30px;
+    }
 
-        .publication-card {
-            background: #fff;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+    .publication-card {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
 
-        .publication-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+    .publication-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
 
-        .publication-content {
-            padding: 20px;
-        }
+    .publication-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Ensures the entire image is visible */
+    border-bottom: 1px solid #eee;
+    background-color: #f8f9fa; /* Optional: adds a background to fill empty spaces */
+    }
 
-        .publication-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
 
-        .publication-description {
-            font-size: 14px;
-            color: #666;
-        }
+    .publication-content {
+        padding: 20px;
+    }
 
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-        }
+    .publication-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
 
-        .view-all-btn {
-            text-decoration: none;
-            color: #1a73e8;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
+    .publication-description {
+        font-size: 14px;
+        color: #666;
+        margin-top: 8px;
+        line-height: 1.6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-top: 30px;
+    }
+
+    .project-card {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .project-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+
+    .project-description {
+        font-size: 14px;
+        color: #666;
+        margin-top: 8px;
+        line-height: 1.6;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .view-all-btn {
+        text-decoration: none;
+        color: #1a73e8;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+    }
 
         @media (max-width: 768px) {
             .hero {
@@ -163,67 +251,204 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .contact-section {
+    padding: 60px 40px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #eee;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.contact-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-detail {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-detail:hover {
+    color: #1a73e8;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#" class="logo">Mustaqeem Khan</a>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#publications">Publications</a>
-            <a href="#projects">Projects</a>
-            <a href="#cv">CV</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="social-links">
-            <a href="#" title="LinkedIn">💼</a>
-            <a href="#" title="Twitter">🔷</a>
-            <a href="#" title="GitHub">🎯</a>
-        </div>
-    </nav>
+  <nav>
+    <a href="#" class="logo">Mustaqeem Khan</a>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="my_cv.pdf" download="Mustaqeem_Khan_CV.pdf">CV</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/dr-mustaqeem-khan-774977151/" target="_blank" title="LinkedIn">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+        </a>
+        <a href="https://github.com/your-username" target="_blank" title="GitHub">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=uEZhRWAAAAAJ&hl=en" target="_blank" title="Google Scholar">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                <path d="M12 12.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"/>
+            </svg>
+        </a>
+    </div>
+</nav>
 
     <section class="hero" id="about">
         <div class="hero-content">
             <h1>About</h1>
             <p>My research interests revolve around audio, video, and Speech Signal Processing; my Ph.D. thesis was on
-            human emotion recognition using Deep Learning techniques. I have achieved an expert level of conceptual and
-            implementation skills in Deep Learning for various applications. During my Ph.D. research, I designed different
-            kinds of Machine/Deep Learning models, including 1D-CNNs, 2D-CNNs, 3D-CNNs, Multi-Model, audio/text
-            encoders, sequential and its variants for emotion recognition, age and gender detection, action recognition,
-            violence detection, and forecasting. My academic research has been reviewed and published in several reputed
-            peer-reviewed international journals and A* conferences like IEEE, ISE, Elsevier, Welly, IEEE/CVF, and
-            Springer.</p>
+              human emotion recognition using Deep Learning techniques. I have achieved an expert level of conceptual and
+              implementation skills in Deep Learning for various applications. During my Ph.D. research, I designed different
+              kinds of Machine/Deep Learning models, including 1D-CNNs, 2D-CNNs, 3D-CNNs, Multi-Model, audio/text
+              encoders, sequential and its variants for emotion recognition, age and gender detection, action recognition,
+              violence detection, and forecasting. Currently, I am serving as a Postdoctoral Fellow at Mohamed Bin Zayed 
+              University of Artificial Intelligence (MBZUAI) and Lab Coordinator at the Multimedia Communication Recognition 
+              (MCR) Laboratory. My academic research has been reviewed and published in several reputed peer-reviewed 
+              international journals and A* conferences like IEEE, ISE, Elsevier, Welly, IEEE/CVF, and Springer, with 
+              over 2000+ citations and an h-index of 16.</p>
         </div>
         <img src="mustaqeem.jfif" alt="Mustaqeem Khan" class="hero-image">
     </section>
 
     <section class="section" id="publications">
-        <div class="section-header">
-            <h2>Publications</h2>
-            <a href="https://scholar.google.com/citations?user=YOUR_ID" class="view-all-btn">View all →</a>
-        </div>
-        <div class="publications-grid">
-            <div class="publication-card">
-                <div class="publication-content">
-                    <h3 class="publication-title">Deepskinformer: Skin Lesion Segmentation Using Hierarchical Transformers And Edge Enhancement</h3>
-                    <p class="publication-description">IEEE International Conference on Image Processing (ICIP), 2024</p>
-                </div>
-            </div>
-
-            <div class="publication-card">
-                <div class="publication-content">
-                    <h3 class="publication-title">Drone-HAT: Hybrid Attention Transformer for Complex Action Recognition</h3>
-                    <p class="publication-description">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</p>
-                </div>
-            </div>
-
-            <div class="publication-card">
-                <div class="publication-content">
-                    <h3 class="publication-title">AAD-Net: Advanced End-to-End Signal Processing System for Human Emotion Detection</h3>
-                    <p class="publication-description">Knowledge-Based System, 2023</p>
-                </div>
+      <div class="section-header">
+          <h2>Publications</h2>
+          <a href="https://scholar.google.com/citations?user=uEZhRWAAAAAJ&hl=en" class="view-all-btn">View all →</a>
+      </div>
+      <div class="publications-grid">
+          <div class="publication-card">
+              <img src="paper1.jpg" alt="Publication 1" class="publication-image">
+              <div class="publication-content">
+                  <h3 class="publication-title">Deepskinformer: Skin Lesion Segmentation Using Hierarchical Transformers</h3>
+                  <p class="publication-description">IEEE International Conference on Image Processing (ICIP), 2024</p>
+              </div>
+          </div>
+  
+          <div class="publication-card">
+            <img src="droneHat.png" alt="Drone-HAT Publication" class="publication-image">
+            <div class="publication-content">
+                <h3 class="publication-title">Drone-HAT: Hybrid Attention Transformer for Complex Action Recognition</h3>
+                <p class="publication-description">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</p>
             </div>
         </div>
-    </section>
+  
+          <div class="publication-card">
+              <img src="paper3.jpg" alt="Publication 3" class="publication-image">
+              <div class="publication-content">
+                  <h3 class="publication-title">AAD-Net: Advanced End-to-End Signal Processing System</h3>
+                  <p class="publication-description">Knowledge-Based System, 2023</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-header">
+        <h2>Projects</h2>
+        <a href="#" class="view-all-btn">View all →</a>
+    </div>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="emotion.jpg" alt="Emotion Recognition" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Emotion Recognition System</h3>
+                <p class="project-description">A system that recognizes human emotions in real-time using advanced deep learning techniques.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="violence.jpg" alt="Violence Detection" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Violence Detection in Videos</h3>
+                <p class="project-description">An AI-powered project that identifies violent actions in videos using sequential and 3D-CNN models.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="sentiment.jpg" alt="Sentiment Analysis" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Multi-modal Sentiment Analysis</h3>
+                <p class="project-description">An application combining audio and text analysis for identifying sentiment using multi-modal techniques.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <h2>Contact</h2>
+  <div class="contact-grid">
+      <div class="contact-card">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="#1a73e8">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <h3 class="contact-title">Email</h3>
+          <a href="mailto:mustaqeemicp@gmail.com" class="contact-detail">mustaqeemicp@gmail.com</a>
+      </div>
+
+      <div class="contact-card">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="#1a73e8">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          <h3 class="contact-title">LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/dr-mustaqeem-khan-774977151/" target="_blank" class="contact-detail">Connect on LinkedIn</a>
+      </div>
+
+      <div class="contact-card">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="#1a73e8">
+            <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/>
+        </svg>
+        <h3 class="contact-title">Twitter</h3>
+        <a href="https://twitter.com/your-username" target="_blank" class="contact-detail">Follow on Twitter</a>
+    </div>
+</div>
+</section>
+
 </body>
 </html>
